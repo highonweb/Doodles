@@ -142,6 +142,7 @@ function color(col){
     colorsh = document.querySelector("#colorsh")
     colorsh.style.backgroundColor = col
     ctx.strokeStyle= String(col);
+    ctx.fillStyle= String(col);
 }
 
 function stopp(){
