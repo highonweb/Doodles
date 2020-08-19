@@ -84,9 +84,9 @@ if(i==1){
     isDarkmode=true
     }
 }
-canvas.addEventListener("mousedown",start)
+/*canvas.addEventListener("mousedown",start)
 canvas.addEventListener("mouseup",stopp)
-canvas.addEventListener("mousemove",paint)
+canvas.addEventListener("mousemove",paint)*/
 canvas.addEventListener("touchstart",start)
 canvas.addEventListener("touchend",stopp)
 canvas.addEventListener("touchmove",paint)
