@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doodles</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <div class="tools" id="colorsh"></div>
+    <canvas id="canvas"></canvas>
+    <div id="controls">
+        <div><img class="tools" src="img\tools\pencil.png" onclick=pencil()></div>
+        <div><img class="tools" src="img\tools\eraser.png" onclick=eraser()></div>
+        <div><img class="tools" src="img\tools\clean.png" onclick=clean()></div>
+        <a id="dl"><img class="tools" src="img\tools\save.png" onclick=save()></a>
+        <div class="color-parent">
+            <div class="div1" onclick="color('#FF355E')"> </div>
+<div class="div2" onclick="color('#FD5B78')"> </div>
+<div class="div3" onclick="color('#FF6037')"> </div>
+<div class="div4" onclick="color('#FF9966')"> </div>
+<div class="div5" onclick="color('#FF9933')"> </div>
+<div class="div6" onclick="color('#FFCC33')"> </div>
+<div class="div7" onclick="color('#FFFF66')"> </div>
+<div class="div8" onclick="color('#FFFF66')"> </div>
+<div class="div9" onclick="color('#CCFF00')"> </div>
+<div class="div10"onclick="color('#66FF66')"> </div>
+<div class="div11"onclick="color('#AAF0D1')"> </div>
+<div class="div12"onclick="color('#50BFE6')"> </div>
+<div class="div13"onclick="color('#FF6EFF')"> </div>
+<div class="div14"onclick="color('#EE34D2')"> </div>
+<div class="div15"onclick="color('#FF00CC')"> </div>
+<div class="div16"onclick="color('#FF00CC')"> </div>
+        </div>
+        <div><img class="tools" id="mode" src="img\modes\light.png" onclick=mode(this,2)></div>
+    </div>
+
+    <!--JS-->
+    <script src="index.js"></script>
+</body>
+</html>
