@@ -1,10 +1,10 @@
 canvas{
     border: 10px #cfcfcf solid;
-    
+    cursor: pointer;
 }
 #controls{
-    height: 20vh;
-    width: 97%;
+    height: 17vh;
+    width: 98.75%;
     border: 10px #cfcfcf solid;
     margin: auto;
     display: flex;
@@ -13,6 +13,8 @@ canvas{
 .tools{
     width: 100px;
     height: 100px;
+    margin-right: 3px;
+   
 }
 #colorsh{
     background-color: black; 
@@ -37,6 +39,7 @@ body{
     grid-column-gap: 2px;
     grid-row-gap: 2px;
     align-self: right;
+    border: black solid 2px;
     }
     
     .div1 { grid-area: 1 / 1 / 2 / 2; background-color:#FF355E ;}
@@ -56,3 +59,32 @@ body{
     .div15 { grid-area: 2 / 7 / 3 / 8;background-color: #FF00CC; }
     .div16 { grid-area: 2 / 8 / 3 / 9;background-color: #FF00CC; } 
 
+    
+      
+      .dropup {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropup-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 100px;
+        bottom: 100px;
+        z-index: 1;
+      }
+      
+      .dropup-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropup-content a:hover {background-color: #ccc}
+      
+      .dropup:hover .dropup-content {
+        display: block;
+      }
+      

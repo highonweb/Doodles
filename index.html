@@ -16,8 +16,20 @@
         <div><img class="tools" src="img\tools\pencil.png" onclick=pencil()></div>
         <div><img class="tools" src="img\tools\eraser.png" onclick=eraser()></div>
         <div><img class="tools" src="img\tools\clean.png" onclick=clean()></div>
-        <div><img class="tools" src="img\tools\poly.png" onclick=poly()></div>
-        <a id="dl"><img class="tools" src="img\tools\save.png" onclick=save()></a>
+        
+        <div class="dropup tools">
+            <div><img class="tools dropbtn" src="img\tools\thick.png" ></div>
+            <div class="dropup-content">
+              <a href="#" onclick="thick(2)">2px</a>
+              <a href="#" onclick="thick(4)">4px</a>
+              <a href="#" onclick="thick(8)">8px</a>
+              <a href="#" onclick="thick(16)">16px</a>
+              <a href="#" onclick="thick(32)">32px</a>
+            </div>
+          </div>
+        <div><img class="tools" src="img\tools\rect.png" onclick=rect()></div>
+        <div><img class="tools" style="width: 200px;" src="img\tools\circle.png" onclick=circle()></div>
+        <div><img class="tools" src="img\tools\text.png" onclick=text()></div>
         <div class="color-parent">
             <div class="div1" onclick="color('#FF355E')"> </div>
 <div class="div2" onclick="color('#FD5B78')"> </div>
@@ -36,6 +48,7 @@
 <div class="div15"onclick="color('#FF00CC')"> </div>
 <div class="div16"onclick="color('#FF00CC')"> </div>
         </div>
+        <a id="dl"><img class="tools" src="img\tools\save.png" onclick=save()></a>
         <div><img class="tools" id="mode" src="img\modes\light.png" onclick=mode(this,2)></div>
     </div>
 
