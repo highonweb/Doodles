@@ -5,12 +5,12 @@ var painting = false
 canvas.width = window.innerWidth*98/100
 canvas.height = window.innerHeight*75/100
 var isDarkmode=false
+var isPoly = false
 
-//color picker
+function poly() {
+    isPoly=true
 
-
-
-///////////////////////////////////////////
+}
 
 function clean(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -87,4 +87,6 @@ if(i==1){
 canvas.addEventListener("mousedown",start)
 canvas.addEventListener("mouseup",stopp)
 canvas.addEventListener("mousemove",paint)
-
+canvas.addEventListener("touchstart",start)
+canvas.addEventListener("touchend",stopp)
+canvas.addEventListener("touchmove",paint)
